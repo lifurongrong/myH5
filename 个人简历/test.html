@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function ajax({ url, type = 'get', data = {}, cache = false, async = true }) {
+            return new Promise(function (res, rej) {
+                let str = ``;
+                for (let k in data) {
+                    if (data.hasOwnProperty(k)) {
+                        str += `${k}=${data[k]}&`;
+                    }
+                }
+                str = str.replace(/&$/, '');
+                if (type.toLocaleLowerCase() == 'get') {
+                    url += url.includes('?') ? `&${str}` : `?${str}`;
+                    !cache ? url += `&_=${Math.random()}` : null;
+                }
+                let xhr = new XMLHttpRequest();
+                xhr.open(type, url, async);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4) {
+                        if (/2\d{2}|304/.test(xhr.status)) {
+                            let str = xhr.response;
+                            let obj = null;
+                            try {
+                                obj = JSON.parse(str);
+                            } catch (e) {
+                                obj = xhr;
+                            }
+                            res(obj);
+                        } else if (/[45]\d{2}/.test(xhr.status)) {
+                            rej(xhr);
+                        }
+                    }
+                }
+                xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded;charset=utf-8');
+                xhr.send(str);
+            });
+        }
+        ajax({
+            url: 'https://www.easy-mock.com/mock/5cd2aa7958a77829095bd1f1/api/customer-flow/info',
+            data: { name: 'aaa', age: 10 },
+            type: 'get'
+        }).then(data => {
+            console.log(1,data);
+        }).catch(err => {
+            console.log(2,err);
+        })
+    </script>
+</body>
+
+</html>
