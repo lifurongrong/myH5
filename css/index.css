@@ -132,18 +132,24 @@ body {
 }
 .container .swiper-container .swiper-slide .line {
   position: absolute;
-  right: .4rem;
+  left: 5.4rem;
   top: 3.6rem;
   z-index: 2;
-  width: 100%;
-  text-align: right;
+  width: 2rem;
+  height: .9rem;
 }
-.container .swiper-container .swiper-slide .line img {
+.container .swiper-container .swiper-slide .line div {
+  width: 100%;
+  height: 100%;
+  left: 5.4rem;
+  top: 3.6rem;
+}
+.container .swiper-container .swiper-slide .line div.animate {
+  animation: 1s ease 1.5s 1 normal both running twisterInUpRight;
+}
+.container .swiper-container .swiper-slide .line div img {
   position: relative;
   right: -0.18rem;
-}
-.container .swiper-container .swiper-slide .line img.animate {
-  animation: 1s ease 1.5s 1 normal both running twisterInUpRight;
 }
 .container .swiper-container .swiper-slide h2 {
   color: #127A6E;
@@ -164,17 +170,17 @@ body {
   width: 100%;
   height: 100%;
 }
+.container .swiper-container .swiper-slide .bg_img.animate {
+  animation: 1s ease 0s 1 normal both running fadeInUp;
+}
 .container .swiper-container .swiper-slide .bg_img img {
   width: 100%;
   height: 100%;
 }
-.container .swiper-container .swiper-slide .bg_img img.animate {
-  animation: 1s ease 0s 1 normal both running fadeInUp;
-}
 .container .swiper-container .swiper-slide.slide2 {
   background: #127a6e;
 }
-.container .swiper-container .swiper-slide .listText {
+.container .swiper-container .swiper-slide.slide2 .listText {
   position: absolute;
   z-index: 5;
   width: 0.63rem;
@@ -184,21 +190,27 @@ body {
   left: .5rem;
   font-size: 1rem;
   color: #09562f;
+}
+.container .swiper-container .swiper-slide.slide2 .listText.animate {
   animation: 1s ease 1s 1 normal both running puffIn;
 }
-.container .swiper-container .swiper-slide .listBg {
+.container .swiper-container .swiper-slide.slide2 .listBg {
   position: absolute;
   z-index: 2;
-  top: -40%;
-  left: -289%;
+  top: -160px;
+  left: -878px;
+  width: 994.5px;
+  height: 994.5px;
+}
+.container .swiper-container .swiper-slide.slide2 .listBg.animate {
   animation: 1.5s ease 0s 1 normal both running fadeInLeft;
 }
-.container .swiper-container .swiper-slide .listBg img {
+.container .swiper-container .swiper-slide.slide2 .listBg img {
   display: block;
   width: 100%;
   height: 100%;
 }
-.container .swiper-container .swiper-slide .bg2 {
+.container .swiper-container .swiper-slide.slide2 .bg2 {
   position: absolute;
   left: -0.1rem;
   top: 0;
@@ -206,88 +218,113 @@ body {
   opacity: 0.64;
   height: 100%;
 }
-.container .swiper-container .swiper-slide .bg2 img {
+.container .swiper-container .swiper-slide.slide2 .bg2 img {
   height: 100%;
 }
-.container .swiper-container .swiper-slide .line2 {
+.container .swiper-container .swiper-slide.slide2 .line2 {
   position: absolute;
   z-index: 2;
-  top: -40%;
-  left: -280%;
+  width: 1031px;
+  height: 1031px;
+  top: -182px;
+  left: -878.5px;
+}
+.container .swiper-container .swiper-slide.slide2 .line2.animate {
   animation: 1.5s ease 0s 1 normal both running fadeInLeft;
 }
-.container .swiper-container .swiper-slide .line2 img {
+.container .swiper-container .swiper-slide.slide2 .line2 img {
   width: 100%;
   height: 100%;
 }
-.container .swiper-container .swiper-slide .item {
+.container .swiper-container .swiper-slide.slide2 .item {
   position: absolute;
   z-index: 10;
-  width: 1.05rem;
-  height: 1.05rem;
+  width: 50px;
+  height: 50px;
 }
-.container .swiper-container .swiper-slide .item img {
+.container .swiper-container .swiper-slide.slide2 .item img {
   width: 100%;
   height: 100%;
 }
-.container .swiper-container .swiper-slide .item1 {
-  top: 10.2rem;
-  left: 1.84rem;
+.container .swiper-container .swiper-slide.slide2 .item1 {
+  top: 510px;
+  left: 92px;
+}
+.container .swiper-container .swiper-slide.slide2 .item1.animate {
   animation: 2s ease 2.3s 1 normal both running bounceIn;
 }
-.container .swiper-container .swiper-slide .item2 {
-  top: 8.1rem;
-  left: 2.35rem;
+.container .swiper-container .swiper-slide.slide2 .item2 {
+  top: 405px;
+  left: 120px;
+}
+.container .swiper-container .swiper-slide.slide2 .item2.animate {
   animation: 2s ease 2.1s 1 normal both running bounceIn;
 }
-.container .swiper-container .swiper-slide .item3 {
-  top: 5.8rem;
-  left: 2.5rem;
+.container .swiper-container .swiper-slide.slide2 .item3 {
+  top: 290px;
+  left: 127.5px;
+}
+.container .swiper-container .swiper-slide.slide2 .item3.animate {
   animation: 2s ease 1.9s 1 normal both running bounceIn;
 }
-.container .swiper-container .swiper-slide .item4 {
-  top: 3.6rem;
-  left: 2.2rem;
+.container .swiper-container .swiper-slide.slide2 .item4 {
+  left: 110px;
+  top: 180px;
+}
+.container .swiper-container .swiper-slide.slide2 .item4.animate {
   animation: 2s ease 1.7s 1 normal both running bounceIn;
 }
-.container .swiper-container .swiper-slide .item5 {
-  top: 1.7rem;
-  left: 1.6rem;
+.container .swiper-container .swiper-slide.slide2 .item5 {
+  top: 85px;
+  left: 80px;
+}
+.container .swiper-container .swiper-slide.slide2 .item5.animate {
   animation: 2s ease 1.5s 1 normal both running bounceIn;
 }
-.container .swiper-container .swiper-slide .itemText {
+.container .swiper-container .swiper-slide.slide2 .itemText {
   position: absolute;
   z-index: 10;
   font-size: .29rem;
   color: #fff;
 }
-.container .swiper-container .swiper-slide .itemText span {
+.container .swiper-container .swiper-slide.slide2 .itemText span {
   display: block;
+  width: 3rem;
   line-height: .5rem;
 }
-.container .swiper-container .swiper-slide .itemText1 {
-  top: 10.18rem;
-  left: 3.2rem;
+.container .swiper-container .swiper-slide.slide2 .itemText1 {
+  top: 510px;
+  left: 160px;
+}
+.container .swiper-container .swiper-slide.slide2 .itemText1.animate {
   animation: 1s ease 2.3s 1 normal both running fadeInRight;
 }
-.container .swiper-container .swiper-slide .itemText2 {
-  top: 8.05rem;
-  left: 3.6rem;
+.container .swiper-container .swiper-slide.slide2 .itemText2 {
+  top: 402.5px;
+  left: 180px;
+}
+.container .swiper-container .swiper-slide.slide2 .itemText2.animate {
   animation: 1s ease 2.1s 1 normal both running fadeInRight;
 }
-.container .swiper-container .swiper-slide .itemText3 {
-  top: 5.78rem;
-  left: 3.7rem;
+.container .swiper-container .swiper-slide.slide2 .itemText3 {
+  top: 290px;
+  left: 179px;
+}
+.container .swiper-container .swiper-slide.slide2 .itemText3.animate {
   animation: 1s ease 1.9s 1 normal both running fadeInRight;
 }
-.container .swiper-container .swiper-slide .itemText4 {
-  top: 3.58rem;
-  left: 3.4rem;
+.container .swiper-container .swiper-slide.slide2 .itemText4 {
+  top: 180px;
+  left: 160px;
+}
+.container .swiper-container .swiper-slide.slide2 .itemText4.animate {
   animation: 1s ease 1.7s 1 normal both running fadeInRight;
 }
-.container .swiper-container .swiper-slide .itemText5 {
-  top: 1.68rem;
-  left: 2.8rem;
+.container .swiper-container .swiper-slide.slide2 .itemText5 {
+  top: 84px;
+  left: 140px;
+}
+.container .swiper-container .swiper-slide.slide2 .itemText5.animate {
   animation: 1s ease 1.5s 1 normal both running fadeInRight;
 }
 .container .swiper-container .swiper-slide.slide3 {
@@ -306,14 +343,20 @@ body {
 }
 .container .swiper-container .swiper-slide.slide3 .part:nth-child(1) {
   top: 1.5rem;
+}
+.container .swiper-container .swiper-slide.slide3 .part:nth-child(1).animate {
   animation: 1s ease 1s 1 normal both running fadeInLeft;
 }
 .container .swiper-container .swiper-slide.slide3 .part:nth-child(2) {
   top: 5.8rem;
+}
+.container .swiper-container .swiper-slide.slide3 .part:nth-child(2).animate {
   animation: 1s ease 2s 1 normal both running fadeInLeft;
 }
 .container .swiper-container .swiper-slide.slide3 .part:nth-child(3) {
   top: 7.9rem;
+}
+.container .swiper-container .swiper-slide.slide3 .part:nth-child(3).animate {
   animation: 1s ease 3s 1 normal both running fadeInLeft;
 }
 .container .swiper-container .swiper-slide.slide3 .part_tit {
@@ -327,14 +370,20 @@ body {
 }
 .container .swiper-container .swiper-slide.slide3 .part_tit:nth-child(4) {
   top: 1.85rem;
+}
+.container .swiper-container .swiper-slide.slide3 .part_tit:nth-child(4).animate {
   animation: 1s ease 1s 1 normal both running fadeInDown;
 }
 .container .swiper-container .swiper-slide.slide3 .part_tit:nth-child(5) {
   top: 6.15rem;
+}
+.container .swiper-container .swiper-slide.slide3 .part_tit:nth-child(5).animate {
   animation: 1s ease 2s 1 normal both running fadeInDown;
 }
 .container .swiper-container .swiper-slide.slide3 .part_tit:nth-child(6) {
   top: 8.25rem;
+}
+.container .swiper-container .swiper-slide.slide3 .part_tit:nth-child(6).animate {
   animation: 1s ease 3s 1 normal both running fadeInDown;
 }
 .container .swiper-container .swiper-slide.slide3 .part_cont {
@@ -349,24 +398,35 @@ body {
   width: 28%;
   box-sizing: border-box;
   margin-left: .3rem;
+}
+.container .swiper-container .swiper-slide.slide3 .part_cont div.icon.animate {
   animation: 1s ease 1.5s 1 normal both running twisterInUpRight;
 }
 .container .swiper-container .swiper-slide.slide3 .part_cont div.icon img {
   width: 100%;
 }
-.container .swiper-container .swiper-slide.slide3 .part_cont li {
+.container .swiper-container .swiper-slide.slide3 .part_cont ul.animate {
+  animation: 1s ease 1.5s 1 normal both running fadeInLeft;
+}
+.container .swiper-container .swiper-slide.slide3 .part_cont ul li {
   line-height: .5rem;
 }
 .container .swiper-container .swiper-slide.slide3 .part_cont:nth-child(7) {
   top: 2.85rem;
+}
+.container .swiper-container .swiper-slide.slide3 .part_cont:nth-child(7).animate {
   animation: 1s ease 1.5s 1 normal both running fadeInLeft;
 }
 .container .swiper-container .swiper-slide.slide3 .part_cont:nth-child(8) {
   top: 7.15rem;
+}
+.container .swiper-container .swiper-slide.slide3 .part_cont:nth-child(8).animate {
   animation: 1s ease 2.5s 1 normal both running fadeInLeft;
 }
 .container .swiper-container .swiper-slide.slide3 .part_cont:nth-child(9) {
   top: 9.25rem;
+}
+.container .swiper-container .swiper-slide.slide3 .part_cont:nth-child(9).animate {
   animation: 1s ease 3.5s 1 normal both running fadeInLeft;
 }
 .container .swiper-container .swiper-slide.slide3 .bord {
@@ -376,6 +436,8 @@ body {
   height: 82%;
   top: 9%;
   left: 6%;
+}
+.container .swiper-container .swiper-slide.slide3 .bord.animate {
   animation: 1s ease 2s 1 normal both running zoomIn;
 }
 .container .swiper-container .swiper-slide.slide3 .bord img {
@@ -387,6 +449,8 @@ body {
   width: 100%;
   height: 100%;
   opacity: 1;
+}
+.container .swiper-container .swiper-slide.slide3 .bg2.animate {
   animation: 1s ease 0s 1 normal both running fadeInUp;
 }
 .container .swiper-container .swiper-slide.slide3 .bg2 img {
@@ -400,6 +464,8 @@ body {
   height: 3.2rem;
   top: -0.66rem;
   left: 4.8rem;
+}
+.container .swiper-container .swiper-slide.slide3 .light2.animate {
   animation: 1s ease 0s 1 normal both running fadeInDown;
 }
 .container .swiper-container .swiper-slide.slide3 .light2 img {

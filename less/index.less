@@ -129,18 +129,25 @@ html,body{
             }
             .line{
                 position: absolute;
-                right: .4rem;
+                left: 5.4rem;
                 top:3.6rem;
                 z-index: 2;
-                width:100%;
-                text-align: right;
-                img{
-                    position: relative;
-                    right:-.18rem;
+                width: 2rem; 
+                height: .9rem; 
+                div{
+                    width: 100%;
+                    height: 100%; 
+                    left:5.4rem;
+                    top:3.6rem;
                     &.animate{
                         animation: 1s ease 1.5s 1 normal both running twisterInUpRight;
                     }
+                    img{
+                        position: relative;
+                        right:-.18rem;
+                    }
                 }
+                
             }
             h2{
                 color: #127A6E;
@@ -158,136 +165,190 @@ html,body{
                 top:0;
                 left:0;
                 z-index:1;
+                &.animate{
+                    animation: 1s ease 0s 1 normal both running fadeInUp;
+                }
                 .w();
                 img{
                     .w();
-                    &.animate{
-                        animation: 1s ease 0s 1 normal both running fadeInUp;
-                    }
                 }
             }
             &.slide2{
                 background: rgb(18, 122, 110);
-            }
-            .listText{
-                position: absolute;
-                z-index: 5;
-                width: 0.63rem;
-                height:1.84rem;
-                line-height: 1rem;
-                top:5rem;
-                left:.5rem;
-                font-size:1rem;
-                color:#09562f;
-                animation: 1s ease 1s 1 normal both running puffIn;
-                &.animate{
+                .center{
                     
                 }
-            }
-            .listBg{
-                position: absolute; 
-                z-index: 2; 
-                top: -40%; 
-                left: -289%;
-                animation: 1.5s ease 0s 1 normal both running fadeInLeft;
-                img{
-                    display: block;
-                    width:100%;
-                    height: 100%;
+                .listText{
+                    position: absolute;
+                    z-index: 5;
+                    width: 0.63rem;
+                    height:1.84rem;
+                    line-height: 1rem;
+                    top:5rem;
+                    left:.5rem;
+                    font-size:1rem;
+                    color:#09562f;
+                    &.animate{
+                        animation: 1s ease 1s 1 normal both running puffIn;
+                    }
+                }
+                .listBg{
+                    position: absolute; 
+                    z-index: 2; 
+                    top: -160px;
+                    left: -878px;
+                    width:994.5px;
+                    height: 994.5px;
+                    &.animate{
+                        animation: 1.5s ease 0s 1 normal both running fadeInLeft;
+                    }
+                    img{
+                        display: block;
+                        width:100%;
+                        height: 100%;
+                    }
+                }
+                .bg2{
+                    position: absolute;
+                    left:-.1rem;
+                    top:0;
+                    z-index: 2;
+                    opacity: 0.64;
+                    height:100%;
+                    img{
+                        height: 100%;
+                    }
+                }
+                .line2{
+                    position: absolute;
+                    z-index: 2;
+                    width: 1031px;
+                    height: 1031px;
+                    top: -182px;
+                    left: -878.5px;
+                    &.animate{
+                        animation: 1.5s ease 0s 1 normal both running fadeInLeft;
+                    }
+                    img{
+                        width:100%;
+                        height: 100%;
+                    }
+                }
+                .item{
+                    position: absolute;
+                    z-index: 10;
+                    // width:1.05rem;
+                    // height: 1.05rem;
+                    width: 50px;
+                    height: 50px;
+                    img{
+                        width:100%;
+                        height: 100%;
+                    }  
+                }
+                .item1{               
+                    // top:10.2rem;
+                    // left:1.84rem;
+                    top:510px;
+                    left:92px;
+                    &.animate{
+                        animation: 2s ease 2.3s 1 normal both running bounceIn;
+                    }
+                }
+                .item2{               
+                    // top:8.1rem;
+                    // left:2.4rem;
+                    top:405px;
+                    left:120px;
+                    &.animate{
+                        animation: 2s ease 2.1s 1 normal both running bounceIn;
+                    }
+                }
+                .item3{               
+                    // top:5.8rem;
+                    // left:2.55rem;
+                    top:290px;
+                    left:127.5px;
+                    &.animate{
+                        animation: 2s ease 1.9s 1 normal both running bounceIn;
+                    }
+                }
+                .item4{               
+                    // top:3.6rem;
+                    // left:2.2rem;
+                    left:110px;
+                    top:180px;
+                    &.animate{
+                        animation: 2s ease 1.7s 1 normal both running bounceIn;
+                    }
+                }
+                .item5{               
+                    // top:1.7rem;
+                    // left:1.6rem;
+                    top:85px;
+                    left:80px;
+                    &.animate{
+                        animation:2s ease 1.5s 1 normal both running bounceIn
+                    }
+                }
+                .itemText{
+                    position: absolute;
+                    z-index:10;
+                    font-size:.29rem;
+                    color:#fff;
+                    span{
+                        display: block;
+                        width:3rem;
+                        line-height: .5rem;
+                    }
+                }
+                .itemText1{
+                    // top: 10.18rem;
+                    // left:3.2rem;
+                    top:510px;
+                    left:160px;
+                    &.animate{
+                        animation: 1s ease 2.3s 1 normal both running fadeInRight;
+                    }        
+                }
+                .itemText2{
+                    // top: 8.05rem;
+                    // left:3.6rem;
+                    top:402.5px;
+                    left:180px;
+                    &.animate{
+                        animation: 1s ease 2.1s 1 normal both running fadeInRight;
+                    }
+                }
+                .itemText3{
+                    // top: 5.78rem;
+                    // left:3.7rem;
+                    top:290px;
+                    left:179px;
+                    &.animate{
+                        animation: 1s ease 1.9s 1 normal both running fadeInRight;
+                    } 
+                }
+                .itemText4{
+                    // top: 3.58rem;
+                    // left:3.4rem;
+                    top:180px;
+                    left:160px;
+                    &.animate{
+                        animation: 1s ease 1.7s 1 normal both running fadeInRight;
+                    } 
+                }
+                .itemText5{
+                    // top: 1.68rem;
+                    // left:2.8rem;
+                    top: 84px;
+                    left:140px;
+                    &.animate{
+                        animation: 1s ease 1.5s 1 normal both running fadeInRight;
+                    }
                 }
             }
-            .bg2{
-                position: absolute;
-                left:-.1rem;
-                top:0;
-                z-index: 2;
-                opacity: 0.64;
-                height:100%;
-                img{
-                    height: 100%;
-                }
-            }
-            .line2{
-                position: absolute;
-                z-index: 2;
-                top:-40%;
-                left:-280%;
-                animation: 1.5s ease 0s 1 normal both running fadeInLeft;
-                img{
-                    width:100%;
-                    height: 100%;
-                }
-            }
-            .item{
-                position: absolute;
-                z-index: 10;
-                width:1.05rem;
-                height: 1.05rem;
-                img{
-                    width:100%;
-                    height: 100%;
-                }  
-            }
-            .item1{               
-                top:10.2rem;
-                left:1.84rem;
-                animation: 2s ease 2.3s 1 normal both running bounceIn;
-            }
-            .item2{               
-                top:8.1rem;
-                left:2.35rem;
-                animation: 2s ease 2.1s 1 normal both running bounceIn;
-            }
-            .item3{               
-                top:5.8rem;
-                left:2.5rem;
-                animation: 2s ease 1.9s 1 normal both running bounceIn;
-            }
-            .item4{               
-                top:3.6rem;
-                left:2.2rem;
-                animation: 2s ease 1.7s 1 normal both running bounceIn;
-            }
-            .item5{               
-                top:1.7rem;
-                left:1.6rem;
-                animation:2s ease 1.5s 1 normal both running bounceIn
-            }
-            .itemText{
-                position: absolute;
-                z-index:10;
-                font-size:.29rem;
-                color:#fff;
-                span{
-                    display: block;
-                    line-height: .5rem;
-                }
-            }
-            .itemText1{
-                top: 10.18rem;
-                left:3.2rem;
-                animation: 1s ease 2.3s 1 normal both running fadeInRight;
-            }
-            .itemText2{
-                top: 8.05rem;
-                left:3.6rem;
-                animation: 1s ease 2.1s 1 normal both running fadeInRight;
-            }
-            .itemText3{
-                top: 5.78rem;
-                left:3.7rem;
-                animation: 1s ease 1.9s 1 normal both running fadeInRight;
-            }
-            .itemText4{
-                top: 3.58rem;
-                left:3.4rem;
-                animation: 1s ease 1.7s 1 normal both running fadeInRight;
-            }
-            .itemText5{
-                top: 1.68rem;
-                left:2.8rem;
-                animation: 1s ease 1.5s 1 normal both running fadeInRight;
-            }
+            
             &.slide3{
                 background: #fff;
                 .part{
@@ -302,15 +363,21 @@ html,body{
                     }
                     &:nth-child(1){
                         top: 1.5rem;
-                        animation: 1s ease 1s 1 normal both running fadeInLeft;
+                        &.animate{
+                            animation: 1s ease 1s 1 normal both running fadeInLeft;
+                        }
                     }
                     &:nth-child(2){
                         top: 5.8rem;
-                        animation: 1s ease 2s 1 normal both running fadeInLeft;
+                        &.animate{
+                            animation: 1s ease 2s 1 normal both running fadeInLeft;
+                        } 
                     }
                    &:nth-child(3){
                         top: 7.9rem;
-                        animation: 1s ease 3s 1 normal both running fadeInLeft;
+                        &.animate{
+                            animation: 1s ease 3s 1 normal both running fadeInLeft;
+                        }
                     }
                 }
                 .part_tit{
@@ -323,15 +390,21 @@ html,body{
                     font-size:.44rem;
                     &:nth-child(4){
                         top: 1.85rem;
-                        animation: 1s ease 1s 1 normal both running fadeInDown;
+                        &.animate{
+                            animation: 1s ease 1s 1 normal both running fadeInDown;
+                        }
                     }
                     &:nth-child(5){
                         top: 6.15rem;
-                        animation: 1s ease 2s 1 normal both running fadeInDown;
+                        &.animate{
+                            animation: 1s ease 2s 1 normal both running fadeInDown;
+                        }
                     }
                    &:nth-child(6){
                         top: 8.25rem;
-                        animation: 1s ease 3s 1 normal both running fadeInDown;
+                        &.animate{
+                            animation: 1s ease 3s 1 normal both running fadeInDown;
+                        }
                     }
                 }
                 .part_cont{
@@ -345,26 +418,38 @@ html,body{
                         width:28%;
                         box-sizing: border-box;
                         margin-left:.3rem;
-                        animation: 1s ease 1.5s 1 normal both running twisterInUpRight;
+                        &.animate{
+                            animation: 1s ease 1.5s 1 normal both running twisterInUpRight;
+                        }
                         img{
                             width:100%;
                         }
                     }
-                    
-                    li{
-                        line-height: .5rem;
+                    ul{
+                        &.animate{
+                            animation: 1s ease 1.5s 1 normal both running fadeInLeft;
+                        }
+                        li{
+                            line-height: .5rem;
+                        }
                     }
                     &:nth-child(7){
                         top: 2.85rem;
-                        animation: 1s ease 1.5s 1 normal both running fadeInLeft;
+                        &.animate{
+                            animation: 1s ease 1.5s 1 normal both running fadeInLeft;
+                        }
                     }
                     &:nth-child(8){
                         top: 7.15rem;
-                        animation: 1s ease 2.5s 1 normal both running fadeInLeft;
+                        &.animate{
+                            animation: 1s ease 2.5s 1 normal both running fadeInLeft;
+                        }
                     }
                     &:nth-child(9){
                         top: 9.25rem;
-                        animation: 1s ease 3.5s 1 normal both running fadeInLeft;
+                        &.animate{
+                            animation: 1s ease 3.5s 1 normal both running fadeInLeft;
+                        }
                     }
                 }
                 .bord{
@@ -374,7 +459,9 @@ html,body{
                     height: 82%;
                     top: 9%;
                     left: 6%;
-                    animation: 1s ease 2s 1 normal both running zoomIn;
+                    &.animate{
+                        animation: 1s ease 2s 1 normal both running zoomIn;
+                    }
                     img{
                         width:100%;
                     }
@@ -385,7 +472,9 @@ html,body{
                     width: 100%;
                     height: 100%;
                     opacity: 1;
-                    animation: 1s ease 0s 1 normal both running fadeInUp;
+                    &.animate{
+                        animation: 1s ease 0s 1 normal both running fadeInUp;
+                    }
                     img{
                         width:102%;
                         left:5%;
@@ -398,7 +487,9 @@ html,body{
                     height: 3.2rem;
                     top: -.66rem;
                     left: 4.8rem;
-                    animation: 1s ease 0s 1 normal both running fadeInDown;
+                    &.animate{
+                        animation: 1s ease 0s 1 normal both running fadeInDown;
+                    } 
                     img{
                         height: 100%;
                     }
@@ -443,9 +534,19 @@ html,body{
     0%{opacity:0;-webkit-transform:translate3d(-200px,0,0);transform:translate3d(-200px,0,0)}
     to{opacity:1;-webkit-transform:none;transform:none}
 }
-@keyframes twisterInUpRight{
-    0%{opacity:0;transform-origin:center center;transform:scale(1) translateX(-100%) rotate(-1turn)}
-    to{opacity:1;transform-origin:center center;transform:scale(1) translateX(0) rotate(0deg)}
+
+@keyframes twisterInUpRight {
+    0% {
+        opacity: 0;
+        transform-origin: center center;
+        transform: scale(1) translateX(-100%) rotate(-1turn)
+    }
+
+    to {
+        opacity: 1;
+        transform-origin: center center;
+        transform: scale(1) translateX(0) rotate(0deg)
+    }
 }
 @keyframes fadeInRight{
     0%{opacity:0;-webkit-transform:translate3d(200px,0,0);transform:translate3d(200px,0,0)}
